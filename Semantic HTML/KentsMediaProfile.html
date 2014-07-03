@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Kent's Media</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            padding: 20px;
+            font-family: 'tahoma', sans-serif;
+        }
+        div{
+            margin: 0 auto;
+            display: inline-block;
+        }
+        #wrapper{
+            position: relative;
+            padding: 20px;
+            width: 930px;
+            border-radius: 10px;
+            background-color: #ffc0cb;
+        }
+        h1{
+            text-align: center;
+        }
+        figcaption,p{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        embed{
+            height :140px;
+            width:300px;
+        }
+        meter{
+            width: 165px;
+            height: 20px;
+        }
+        .audio{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 300px;
+            position: absolute;
+        }
+        .video{
+            float: right;
+        }
+        video{
+            width: 370px;
+            height: 245px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Profile</h1>
+        </header>
+        <div class="user">
+            <figure>
+                <figcaption>User: Kent</figcaption>
+                <img src="img/profile.png" alt="Profile-picture">
+            </figure>
+            <p>Profile Completed 60%</p>
+            <meter value="0.6" >60%</meter>
+        </div>
+        <div class="audio">
+            <figure>
+                <figcaption>Uploaded Audio Files</figcaption>
+            <embed autoplay="false" src="http://www.villagegeek.com/downloads/webwavs/feelgood.wav">
+            <audio controls>
+                <source  src="http://www.villagegeek.com/downloads/webwavs/chuckles.mp3" type="audio/wav">
+                Your browser does not support this audio format.
+            </audio>
+            <audio controls>
+                <source src="http://www.villagegeek.com/downloads/webwavs/havemail.wav" type="audio/wav">
+                Your browser does not support this audio format.
+            </audio>
+            <audio controls>
+                <source src="http://www.villagegeek.com/downloads/webwavs/gameover.wav" type="audio/wav">
+                Your browser does not support this audio format.
+            </audio>
+            </figure>
+        </div>
+        <div class="video">
+            <figure>
+                <figcaption>Uploaded video Files</figcaption>
+                <video controls >
+                    <source src="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">
+                    <track src="#" kind="subtitles" >
+                    Your browser does not support this audio format.
+                </video>
+            </figure>
+
+        </div>
+    </div>
+</body>
+</html>

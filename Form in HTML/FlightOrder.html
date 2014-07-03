@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flight Order</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #wrapper{
+            position: relative;
+            width: 400px;
+            font-family: Tahoma;
+            background-color: #ffc0cb;
+            padding: 5px;
+        }
+        div{
+            display: inline-block;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-style:italic ;
+        }
+        div.label{
+            font-style: italic;
+            width: 100%;
+        }
+        div.select{
+            width: 100%;
+        }
+        div.in_label{
+            font-size: 12px;
+            width: 49%;
+        }
+        select{
+            font-weight: bolder;
+            padding: 2px;
+            width: 49%;
+        }
+        div.date{
+            width: 100%;
+        }
+        div.date_input{
+            width: 49%;
+        }
+        div.date_input input{
+            padding: 2px;
+            width: 96%;
+        }
+        div.date_input .half_text{
+            width: 44%;
+        }
+        .number{
+            width: 31%;
+        }
+        div.date_input input.number{
+            padding: 2px;
+            width: 27%;
+        }
+        select.full{
+            width: 100%;
+        }
+        input[type=button]{
+            width: 47%;
+            float: right;
+            padding: 3px;
+            margin: 7px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <h1>flight order</h1>
+            <div class="label">
+                <div class="in_label"><label>From</label></div>
+                <div class="in_label"><label>To</label></div>
+            </div>
+            <div class="select">
+                <select name="city">
+                    <option selected="selected">enter a city</option>
+                </select>
+                <select name="city">
+                    <option selected="selected">enter a city</option>
+                </select>
+            </div>
+           <div class="in_label "style="float: right">
+               <input type="checkbox" id="check">
+               <div class="in_label label "><label for="check">Prefer Directs</label></div>
+           </div>
+            <div class="label">
+                <div class="in_label"><label>Departure Date</label></div>
+                <div class="in_label"><label>Time Interval</label></div>
+            </div>
+            <div class="date">
+                <div class="date_input">
+                    <input type="text" value="09.06.2014">
+                </div>
+                <div class="date_input">
+                    <input type="text" class="half_text" value="00:20">
+                    <input type="text" class="half_text" value="05:00">
+                </div>
+            </div>
+            <div class="label">
+                <div class="in_label"><label>Return Date</label></div>
+                <div class="in_label"><label>Time Interval</label></div>
+            </div>
+            <div class="date">
+                <div class="date_input">
+                    <input type="text" value="13.06.2014">
+                </div>
+                <div class="date_input">
+                    <input type="text" class="half_text" value="16:00">
+                    <input type="text" class="half_text" value="22:00">
+                </div>
+            </div>
+            <div class="label">
+                <div class="in_label">
+                    <div class="number"><label>12+</label></div>
+                    <div class="number"><label>2-12</label></div>
+                    <div class="number"><label>0-2</label></div>
+                </div>
+                <div class="in_label"><label>Choose Class</label></div>
+            </div>
+            <div class="date">
+                <div class="date_input">
+                    <input class="number" type="number" value="0" min="12">
+                    <input class="number" type="number" value="0" min="2" max="12">
+                    <input class="number" type="number" value="0" min="0" max="2">
+                </div>
+                <div class="date_input">
+                    <select class="full" name="city">
+                        <option selected="selected">Economy</option>
+                    </select>
+                </div>
+            </div>
+            <div class="label">
+                <input type="button" value="Search">
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FakeBook</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #wrapper{
+            position: relative;
+            background-color: #3b5997;
+            width: 800px;
+            height: 500px;
+            font-family: "Arial", sans-serif; color: #fff;";
+        }
+        span{
+            font-size: 15px;
+        }
+        h1{
+            font-weight: bold;
+            text-align: center;
+            font-size: 80px;
+        }
+        h3, h5{
+            text-align: center;
+            padding: 5px;
+        }
+        fieldset{
+            margin: 10px;
+        }
+        legend, label{
+            font-size: 14px;
+            margin: 5px;
+        }
+        .none_imp{
+            width: 34%;
+            height: 227px;
+            padding-top: 10px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .imp_info{
+            width: 60%;
+            position: absolute;
+            padding-top: 10px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+        }
+       .none_imp input[type=text], input[type=email], input[type=tel], input[type=password], input[type=url]{
+            margin: 3px 1px;
+            padding: 3px;
+            width: 44%;
+            border-radius: 5px;
+        }
+        p{
+            text-align: left;
+        }
+
+        .imp_info input[type=text] ,input[type=color] , select{
+            width: 30%;
+            margin: 3px 1px;
+            padding: 3px;
+            border-radius: 5px;
+        }
+       #fix,#fix1,#fix2{
+           width: 18%;
+       }
+        textarea{
+            width: 97%;
+            border-radius: 5px;
+            height: 60px;
+        }
+        .button {
+            font-weight: bold;
+            background-color: #ddd;
+            height: 36px;
+            margin: 10px 6px 10px 10px;
+            border: 0 none;
+            border-radius: 5px;
+            color: #3b5997;
+        }
+        .clear {
+            width: 276px;
+        }
+        .register {
+            font-size: 20px;
+            width: 484px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>fakebook<span>&copy</span></h1>
+            <h3>Registration</h3>
+            <h5>It is safe and it will always be!</h5>
+        </header>
+        <form action="" method="get">
+            <fieldset class="none_imp" >
+                <legend>None-Important Information</legend>
+                <input type="text" name="first_name" placeholder="First Name">
+                <input type="text" name="last_name" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="tel" name="te" placeholder="Phone Number">
+                <input type="password" name="pass" placeholder="Your Password">
+                <input type="url" name="url" placeholder="Website">
+                <p><label>Birthday</label></p>
+                <input type="datetime-local"
+                       name="pub_date"
+                       value="2014-09-05T13:58"
+                       step="1"
+                >
+                <input type="radio" name="sex" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="sex" id="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <fieldset class="imp_info" >
+                <legend>Important Information *required</legend>
+                <select name="country"  required="required">
+                    <option selected="selected" disabled value="" style="display: none">Country</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="US">USA</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+                <input type="text" name="village" placeholder="Village" required="true">
+                <input type="text" name="district" placeholder="District" required="true">
+                <input type="text" name="street" placeholder="Street" required="true">
+                <input type="text" name="str_number" placeholder="Nr" required="true" id="fix">
+                <input type="text" name="floor" placeholder="Floor" required="true" id="fix1">
+                <input type="text" name="ap_nr" placeholder="AP Nr" required="true" id="fix2">
+                <p><label>Door Color</label></p>
+                <input type="color" name="door_color" value="#eb25eb">
+                <input type="text" name="water" placeholder="Water Meter Nr" required="true">
+                <select name="country"  required="required">
+                    <option selected="selected" disabled value="" style="display: none">Aunt Panties' Size</option>
+                    <option value="1">35</option>
+                    <option value="2">42</option>
+                    <option value="3">78</option>
+                </select>
+                <p><label>More Personal Information</label></p>
+                <textarea placeholder="Give Us More Information!!!"></textarea>
+            </fieldset >
+            <div style="float: left;">
+                <input type="reset" value="Clear Form" class="clear button" />
+                <button class="register button">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

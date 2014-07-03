@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Calibri;
+        }
+        #wrapper{
+            position: relative;
+            background-color: #eeeeee;
+            padding: 10px;
+            width: 660px;
+        }
+        .title{
+            color: #234465;
+        }
+        .note{
+            width: 100%;
+           top:50px;
+            margin: 5px;
+            color: #808080;
+        }
+        .form_title{
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        div.register{
+            width: 300px;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+        }
+        div.login{
+            position: absolute;
+            width: 300px;
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            background-color: #234465;
+        }
+        .login_title{
+            color: white;
+        }
+        input.text{
+            width: 280px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .submit_button{
+            box-sizing: border-box;
+            color:#234465 ;
+            border-color: #234465;
+            float: right;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .login_button{
+            background-color: #234465;
+            color: white;
+            border-color: #FFA500;
+            float: right;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        input[type=input]{
+            display: inline-block;
+            color: white;
+        }
+        p{
+            display: inline-block;
+            color: white;
+        }
+        a{
+            text-align: right;
+            color: white;
+            float: right;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <form method="post" action="">
+            <h1><label class="title">Enter the system</label></h1>
+            <label class="note">It is necessary to login in Your account in order to sing in for a course.</label>
+            <div class="register">
+                <label class="form_title note">Are you new? <span class="title"> Register</span></label>
+                <input type="text" class="text" placeholder="User name">
+                <input type="email" class="text" placeholder="Email">
+                <input type="password" class="text" placeholder="Password">
+                <input type="password" class="text" placeholder="Confirm Password">
+                <input type="submit" value="Register" class="submit_button">
+            </div>
+            <div class="login">
+                <label class="form_title login_title">Already a student? login</label>
+                <input type="text" class="text" placeholder="User name">
+                <input type="password" class="text" placeholder="Password">
+                <p><input type="checkbox"> Remember me?</p>
+                <input type="submit" value="Login" class="login_button">
+                <a href="#">Forgot password</a>
+                <div style="height: 80px"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

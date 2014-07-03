@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Car</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            padding: 20px;
+            font-family: 'Tahoma', sans-serif;
+        }
+        #wrapper {
+            margin: auto;
+            position: relative;
+            padding: 20px;
+            width: 680px;
+            border-radius: 10px;
+            background-color: #000000;
+        }
+        .content{
+            float: right;
+            width: 340px;
+        }
+        h1{
+            margin-bottom: 10px;
+            color: #ffff00;
+            text-align: center;
+        }
+        iframe{
+            border: 1px solid #ffff00;
+            width: 320px;
+            height: 180px;
+        }
+        /*p{*/
+            /*display: inline-block;*/
+            /*width: 150px;*/
+            /*vertical-align: top;*/
+        /*}*/
+        a{
+            font-style: italic;
+            text-decoration: none;
+            color: #dddddd;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Magic Car Gallery</h1>
+        </header>
+        <iframe scrolling="no" id="imgbox" name="imgbox" frameborder="1" src="img/mustang.png"></iframe>
+        <div class="content">
+            <p><a href="img/mustang.png" target="imgbox">Ford Mustang</a></p>
+            <p><a href="img/BMW%20M5.png" target="imgbox">BMW M5</a></p>
+            <p><a href="img/panamera.png" target="imgbox">Porsche Panamera</a></p>
+            <p><a href="img/Audi%20RS5.png" target="imgbox">Audi RS5</a></p>
+            <p><a href="img/mustang.png" target="imgbox">Mercedes-Benz C63 AMG</a></p>
+         </div>
+    </div>
+</body>
+</html>
